@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>Practica 6</title>
+		<meta name="description" content="" />
+		<meta name="author" content="usuario" />
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+	</head>
+
+	<body>
+
+		<form method="post" action="Practica5.html">
+			<fieldset>
+				<legend>
+					Completar el registro
+				</legend>
+				<br/>
+				<label for="Nick">Nick de usuario</label>
+				<input type="text" id="Nick" name="Nick" disabled="disabled" value="Chicageek"/>
+				<br/>
+				<label for="mail">Correo</label>
+				<input type="email" id="mail" name="mail" disabled="disabled" value="chicageek@yoyo.com"/>
+				<br/>
+				<br/>
+
+				<label for="lista">Lista de intereses:</label>
+				<select name="lista" id="lista" multiple="multiple">
+					<option value="Musica">Musica</option>
+					<option value="Religio">Religion</option>
+					<option value="Deporte">Deporte</option>
+					<option value="Comida">Comida</option>
+					<option value="Cena romantica">Cena romantica</option>
+				</select>
+				<br/>
+				<br/>
+				<label for="Nombre">Nombre completo</label>
+				<input type="text" id="Nombre" name="Nombre"/>
+				<br/>
+				<label for="Direccion">Direccion:</label>
+				<input type="text" id="Direccion" name="Direccion"/>
+				<br/>
+				<label for="phone">Ingrese tu teléfono</label>
+				<input type="tel" id="phone" name="phone"/>
+				<br/>
+				<label for="bday">Cumpleaños</label>
+				<input type="date" id="bday" name="bday"/>
+				<br/>
+				<fieldset>
+					<legend>
+						Sexo
+					</legend>
+					<input type="radio" name="sexo" value="Hombre"/>
+					Hombre
+					<br/>
+					<input type="radio" name="sexo" value="Mujer"/>
+					Mujer
+					<br/>
+				</fieldset>
+				<label for="Contra">Contraseña</label>
+				<input type="password" id="Contra" name="Contra"/>
+				<br/>
+				<br/>
+				<button type="submit">
+					Enviar
+				</button>
+			</fieldset>
+		</form>
+
+	</body>
+</html>
