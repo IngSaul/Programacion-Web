@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<!-- Esta practica consiste en incrustar un calendario con codigo de jquery -->
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>Practica 11</title>
+		<meta name="description" content="" />
+		<meta name="author" content="usuario" />
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="stylesheet" type="text/css" href="hoja.css" />
+	</head>
+
+	<body>
+		<div id="maestro">
+		<form method="get" action="Practica11.html" id="compRegistro">
+			<fieldset>
+				<legend>
+					Completar el registro
+				</legend>
+				<label for="bday">Cumpleaños</label>
+				<input type="date" id="bday" name="bday" required="required" placeholder="dd-mm-aa"/>
+				<div id="error_bday" class="error">
+					Este campo es obligatorio
+				</div>
+				$('#date').DatePicker({
+	flat: true,
+	date: '2008-07-31',
+	current: '2008-07-31',
+	calendars: 1,
+	starts: 1
+});
+				<button type="button">
+					Enviar
+				</button>
+				<button type="reset">
+					Limpiar
+				</button>
+				<button type="submit" id="enviar">
+					Ni se ve
+				</button>
+			</fieldset>
+		</form>
+	</body>
+	</div>
+</html>
+

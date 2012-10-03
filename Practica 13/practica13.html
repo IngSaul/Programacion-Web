@@ -1,0 +1,31 @@
+<!doctyoe html>
+<html>
+
+	<head>
+	</head>
+	
+	<body>
+		 <script type="text/javascript">
+		 	var titulo=document.createElement("h1");
+		 	var contenido=document.createTextNode("Este titulo es magico!");
+		 	titulo.appendChild(contenido);
+		 	titulo.style.color="red";
+		 	document.body.appendChild(titulo);
+
+		 	var parrafo=document.createElement("p");
+		 	var texto=document.createTextNode("Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.");
+		 	parrafo.appendChild(texto);
+		 	parrafo.style.color="blue";
+		 	document.body.appendChild(parrafo);
+
+		 	var titulo2=document.createElement("h2");
+		 	var contenido=document.createTextNode("Este titulo es magico por segunda vez!");
+		 	titulo2.appendChild(contenido);
+		 	titulo2.style.color="green";
+		 	//document.body.insertBefore(titulo2,parrafo);
+
+		 	titulo.parentNode.insertBefore(titulo2,titulo.nextSibling);
+		 </script>
+	</body>
+	
+<html>

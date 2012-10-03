@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>Practica 10-6</title>
+		<meta name="description" content="" />
+		<meta name="author" content="usuario" />
+
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+		<link rel="stylesheet" type="text/css" href="hoja.css" />
+		<script type="text/javascript" src="valida.js"></script>
+	</head>
+
+	<body>
+		<div id="maestro">
+		<form method="get" action="Practica10-6.html" id="compRegistro">
+			<fieldset>
+				<legend>
+					Completar el registro
+				</legend>
+				<label for="Nick">Nick de usuario</label>
+				<input type="text" id="Nick" name="Nick" disabled="disabled" value="Chicageek"/>
+				<label for="mail">Correo</label>
+				<input type="email" id="mail" name="mail" disabled="disabled" value="chicageek@yoyo.com"/>
+				<label for="lista">Lista de intereses:</label>
+				<select name="lista" id="lista" multiple="multiple">
+					<option value="cena_romantica">Cena romantica</option>
+					<option value="musica">Musica</option>
+					<option value="religion">Religion</option>
+					<option value="deporte">Deporte</option>
+					<option value="comida">Comida</option>
+				</select>
+				<div id="error_lista" class="error">
+					Debes seleccionar un elemento
+				</div>
+				<label for="nombre">Nombre completo</label>
+				<input type="text" id="nombre" name="nombre" required="required" pattern="\w{1,35}" placeholder="Escribe tu nombre completo"/>
+				<div id="error_nombre" class="error">
+					Este campo es obligatorio
+				</div>
+				<label for="direccion">Direccion:</label>
+				<input type="text" id="direccion" name="direccion" required="required" placeholder="Escribe tu direccion"/>
+				<div id="error_direccion" class="error">
+					Este campo es obligatorio
+				</div>
+				<label for="phone">Ingresa tu teléfono</label>
+				<input type="tel" id="phone" name="phone" required="required" placeholder="Escribe tu telefono"/>
+				<div id="error_phone" class="error">
+					Este campo es obligatorio
+				</div>
+				<label for="bday">Cumpleaños</label>
+				<input type="date" id="bday" name="bday" required="required" placeholder="dd-mm-aa"/>
+				<div id="error_bday" class="error">
+					Este campo es obligatorio
+				</div>
+				<fieldset>
+					<legend>
+						Sexo
+					</legend>
+					<input type="radio" name="sexo" value="Hombre"/>
+						Hombre
+					<input type="radio" name="sexo" value="Mujer"/>
+						Mujer
+				</fieldset>
+				<label for="contra">Contraseña</label>
+				<input type="password" id="contra" name="contra"/>
+				<button type="button" onclick="regCompleted()">
+					Enviar
+				</button>
+				<button type="reset">
+					Limpiar
+				</button>
+				<button type="submit" id="enviar">
+					Ni se ve
+				</button>
+			</fieldset>
+		</form>
+	</body>
+	</div>
+</html>
+
